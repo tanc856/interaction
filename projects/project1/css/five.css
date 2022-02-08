@@ -1,0 +1,100 @@
+
+
+body {
+    height: 800px;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-size: 8px; 
+    font-style: normal; 
+    font-weight: 400; 
+}
+
+a:link {
+  color: white;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+} 
+
+h1 {
+    padding-top: 24px;
+    color: lightgrey;
+    text-align: center;
+    line-height: 22px;
+}
+
+#third {
+    border-radius: 40px;
+    background: lightgrey;
+    padding: 20px; 
+    width: 490px;
+    height: 40px; 
+    font-size: 24px;
+    color: black;
+    position: fixed;
+    top: 100px;
+    left: 200px;
+    line-height: 40px;
+}
+
+#frame_1 {
+    border-radius: 40px;
+    background: lightgrey;
+    width: 630px;
+    height: 440px; 
+    font-size: 28px;
+    color: black;
+    position: fixed;
+    top: 230px;
+    left: 450px;
+    line-height: 40px;
+    z-index: 1;
+}
+
+
+#frame_2 {
+    border-radius: 40px;
+    background: lightgrey;
+    width: 430px;
+    height: 240px; 
+    font-size: 28px;
+    color: black;
+    position: fixed;
+    top: 300px;
+    left: 200px;
+    line-height: 40px;
+    z-index: 1;
+}
+
+#screenshot {
+    border: 1px solid rgb(0, 0, 0);
+    width: 450px;
+    height: 300px; 
+    position: fixed;
+    z-index: 0;
+    top: 80px;
+    left: 930px;
+}
+
+
+#four {
+    border-radius: 40px;
+    background:  #0096FF;
+    padding: 20px; 
+    width: 350px;
+    height: 40px; 
+    font-size: 24px;
+    color: white;
+    position: fixed;
+    top: 590px;
+    left: 900px;
+    line-height: 40px;
+    z-index: 2;
+}

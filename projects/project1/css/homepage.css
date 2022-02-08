@@ -1,0 +1,92 @@
+
+
+body {
+    height: 800px;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-size: 8px; 
+    font-style: normal; 
+    font-weight: 400; 
+}
+
+a:link {
+  color: white;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+} 
+
+h1 {
+    padding-top: 24px;
+    color: lightgrey;
+    text-align: center;
+    line-height: 22px;
+}
+
+#first {
+    border-radius: 40px;
+    background: #0096FF;
+    padding: 20px; 
+    width: 600px;
+    height: 80px; 
+    font-size: 28px;
+    color: white;
+    position: fixed;
+    top: 180px;
+    left: 650px;
+    line-height: 40px;
+}
+
+#second {
+    border-radius: 40px;
+    background: #0096FF;
+    padding: 20px; 
+    width: 300px;
+    height: 40px; 
+    font-size: 28px;
+    color: white;
+    position: fixed;
+    top: 345px;
+    left: 950px;
+    line-height: 40px;
+}
+
+#third {
+    border-radius: 40px;
+    background: lightgrey;
+    padding: 20px; 
+    width: 300px;
+    height: 40px; 
+    font-size: 28px;
+    color: black;
+    position: fixed;
+    top: 475px;
+    left: 200px;
+    line-height: 40px;
+}
+
+#four {
+    border-radius: 40px;
+    background:  #0096FF;
+    padding: 20px; 
+    width: 300px;
+    height: 40px; 
+    font-size: 28px;
+    color: white;
+    position: fixed;
+    top: 590px;
+    left: 950px;
+    line-height: 40px;
+
+}
+
+
+
+

@@ -1,0 +1,74 @@
+
+
+body {
+    height: 800px;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-size: 8px; 
+    font-style: normal; 
+    font-weight: 400; 
+}
+
+a:link {
+  color: white;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+} 
+
+h1 {
+    padding-top: 24px;
+    color: lightgrey;
+    text-align: center;
+    line-height: 22px;
+}
+
+#third {
+    border-radius: 40px;
+    background: lightgrey;
+    padding: 20px; 
+    width: 330px;
+    height: 40px; 
+    font-size: 28px;
+    color: black;
+    position: fixed;
+    top: 100px;
+    left: 200px;
+    line-height: 40px;
+}
+
+#frame {
+    border-radius: 40px;
+    background: lightgrey;
+    padding: 20px; 
+    width: 530px;
+    height: 340px; 
+    font-size: 28px;
+    color: black;
+    position: fixed;
+    top: 230px;
+    left: 200px;
+    line-height: 40px;
+}
+
+#four {
+    border-radius: 40px;
+    background:  #0096FF;
+    padding: 20px; 
+    width: 230px;
+    height: 40px; 
+    font-size: 28px;
+    color: white;
+    position: fixed;
+    top: 590px;
+    left: 950px;
+    line-height: 40px;
+
+}
