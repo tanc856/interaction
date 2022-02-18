@@ -15,7 +15,7 @@ a:link {
   } 
   
   body {
-      font-family: 'Helvetica', sans-serif;
+    font-family: 'Noto Sans Mono', monospace;
       background-color: #e4e4e4;
       margin: 5vh;
       line-height: 1rem;
