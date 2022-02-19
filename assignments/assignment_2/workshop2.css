@@ -22,12 +22,12 @@
 
 .subtitle {
     position: relative;
-    top: -180px;
+    top: -170px;
     left: 24.8%;
     font-family: 'Spectral', serif;
     color: white;
     opacity: 80%;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .names {
@@ -39,9 +39,8 @@
     column-gap: 100px;
     font-family: 'Spectral', serif;
     color:  #ebcfbe;
-    opacity: 50%;
+    opacity: 60%;
     font-size: 12px;
-
 }
 
 
