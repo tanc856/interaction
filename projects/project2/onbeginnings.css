@@ -1,0 +1,83 @@
+
+@media (max-width: 620px) {
+    div.first {
+    font-size: 14px;
+    width: 70%;
+  }
+}
+
+body {
+    font-family: 'Spectral', serif;
+    margin: 0%;
+    height: 30000px;
+    width: 100%;
+    background: 
+    radial-gradient(ellipse at top, black, transparent 100%),
+    linear-gradient(black, white, black, white, transparent 200%),
+    radial-gradient(ellipse at bottom, black, transparent 300%);
+    background-position: center center;
+}
+
+
+.left {
+    position: fixed;
+    left: 2%;
+    top: 15%;
+    font-size: 18px;
+    padding: 3em;
+    line-height: normal;
+    color: white;
+    opacity: 50%;
+    font-style: italic;
+    width: 20%;
+    height: 1000px;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right {
+    position: fixed;
+    left: 2%;
+    top: 20%;
+    font-size: 18px;
+    line-height: normal;
+    color: #000000;
+    width: 20%;
+    height: 1000px;
+    padding: 3em;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first {
+    position: relative;
+    top: 700px;
+    left: 55%;
+    width: 530px;
+    padding-top: 25%;
+    font-size: 16px;
+    line-height: normal;
+    color: white;
+}
+
+.second {
+    position: relative;
+    top: 1200px;
+    width: 530px;
+    padding-top: 25%;
+    font-size: 16px;
+    line-height: normal;
+    color: white;
+}
+
+.third {
+    position: relative;
+    top: 1700px;
+    width: 530px;
+    padding-top: 25%;
+    font-size: 16px;
+    line-height: normal;
+    color: white;
+}
