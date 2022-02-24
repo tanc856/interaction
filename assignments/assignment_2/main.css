@@ -6,6 +6,13 @@ body {
   font-family: "Imbue", sans-serif;
 }
 
+@media screen and (max-width: 480px) {
+    body {
+        background-color: red;
+        font-size: 12px;
+      }
+    }
+
 a:link {
     color: white;
     text-decoration: underline;
@@ -78,6 +85,7 @@ a:link {
 }
 
 #subheader1 {
+    position: absolute;
     font-size: 25px;
     margin: 400px;
     margin-left: 100px;
