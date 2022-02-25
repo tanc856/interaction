@@ -1,11 +1,4 @@
 
-@media (max-width: 620px) {
-    div.first {
-    font-size: 14px;
-    width: 70%;
-  }
-}
-
 body {
     font-family: 'Spectral', serif;
     margin: 0%;
@@ -119,3 +112,14 @@ body {
     -webkit-text-fill-color: transparent;
     background-attachment: fixed;
 }
+
+@media screen and (max-width: 620px) {
+    body {
+    font-size: 14px;
+    width: 70%;
+  }
+}
+
+/* height of element, scroll position, compare the values */
+
+/* 

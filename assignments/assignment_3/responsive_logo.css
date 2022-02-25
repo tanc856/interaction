@@ -1,0 +1,40 @@
+
+
+body {
+    font-family: 'Bungee Shade', cursive;
+    margin: 10vh;
+}
+
+.logo {
+    font-size: 40px;
+    margin: 40vh;
+    text-align: center;
+}
+
+.logo .type .word {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .logo {
+        font-size: 100px;
+    }
+    
+    .logo .type .number {
+        display: none;
+    }
+
+    .logo .type .word {
+        display: inline-block;
+    }
+}
+
+
+
+
