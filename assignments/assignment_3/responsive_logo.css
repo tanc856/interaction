@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Bungee Shade', cursive;
-    margin: 10vh;
 }
 
 .logo {
@@ -17,6 +16,8 @@ body {
 
 @media screen and (min-width: 768px) {
     .logo {
+        display: flex;
+        justify-content: center;
         font-size: 60px;
     }
 }
@@ -34,7 +35,4 @@ body {
         display: inline-block;
     }
 }
-
-
-
 
