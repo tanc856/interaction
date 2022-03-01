@@ -30,18 +30,18 @@ body {
 }
 
 .first {
-    position: fixed;
+    position: relative;
     color: white;
     opacity: 50%;
     font-size: 12px;
     width: 42%;
-    top: 250px;
+    top: 400px;
     left: 50%;
 }
 
 .second {
-    position: relative;
-    top: 1200px;
+    position: absolute;
+    top: 1550px;
     width: 45%;
     left: 49%;
     font-size: 12px;
@@ -75,19 +75,30 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .left .right .first {
-        margin: 0;
-        height: 30000px;
-        width: 100%;
-        font-size: 18px;
+    .left {
+        font-size: 16px;
+        left: 12%;
+        top: 45%;
 }
+    .right {
+        font-size: 16px;
+        left: 12%;
+        top: 48%;
+    }
+
+    .first {
+        font-size: 14px;
+        top: 350px;
+    }
 }
 
 @media screen and (min-width: 1180px) {
-    .left .right .first {
+    .left {
+        font-size: 18px;
         margin: 0;
         height: 30000px;
         width: 100%;
-        font-size: 18px;
+        left: 12%;
+        top: 45%;
 }
 }
