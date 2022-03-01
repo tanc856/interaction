@@ -30,12 +30,12 @@ body {
 }
 
 .first {
-    position: relative;
+    position: fixed;
     color: white;
-    opacity: 50%;
+    opacity: 30%;
     font-size: 12px;
     width: 42%;
-    top: 400px;
+    top: 350px;
     left: 50%;
 }
 
@@ -72,6 +72,11 @@ body {
     backdrop-filter: blur(20px);
     background-attachment: fixed;
     
+}
+
+.first:hover {
+    color: white;
+    opacity: 80%;
 }
 
 @media screen and (min-width: 768px) {
