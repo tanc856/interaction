@@ -1,15 +1,7 @@
 
-@media (max-width: 620px) {
-    div.first {
-    font-size: 14px;
-    width: 70%;
-  }
-}
-
 body {
     font-family: 'Spectral', serif;
-    margin: 0%;
-    height: 30000px;
+    height: 20000px;
     width: 100%;
     background: 
     radial-gradient(ellipse at top, black, transparent 100%),
@@ -20,69 +12,131 @@ body {
 
 .left {
     position: fixed;
-    left: 2%;
+    left: 12%;
     top: 15%;
-    font-size: 18px;
-    padding: 3em;
-    line-height: normal;
-    color: white;
-    opacity: 100%;
+    font-size: 12px;
     font-style: italic;
-    width: 20%;
-    height: 1000px;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-}
-
-.scroll {
-    position: relative;
-    top: 600px;
-    left: 80%;
-    font-size: 16px;
-    padding: 3em;
-    line-height: normal;
     color: white;
-    opacity: 50%;
-    font-style: italic;
-    width: 20%;
-    display: inline-block;
-    text-transform: lowercase;
-    background: -webkit-linear-gradient(black, white);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-attachment: fixed;
 }
 
 .right {
     position: fixed;
-    left: 2%;
-    top: 20%;
-    font-size: 18px;
+    left: 12%;
+    top: 18%;
+    font-size: 12px;
     line-height: normal;
     color: #000000;
     width: 20%;
-    height: 1000px;
-    padding: 3em;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
 }
 
 .first {
-    position: relative;
-    top: 700px;
-    left: 55%;
-    width: 530px;
-    padding-top: 25%;
-    font-size: 16px;
-    line-height: normal;
+    position: fixed;
     color: white;
+    opacity: 50%;
+    font-size: 12px;
+    width: 42%;
+    top: 350px;
+    left: 50%;
+}
+
+.second {
+    position: absolute;
+    top: 1550px;
+    width: 45%;
+    left: 50%;
+    font-size: 12px;
+    color: white;
+    opacity: 80%;
     display: inline-block;
-    background: -webkit-linear-gradient( black, white);
+    background: -webkit-linear-gradient(black, white);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(50px);
     background-attachment: fixed;
+}
+
+.third {
+    position: absolute;
+    top: 3050px;
+    width: 45%;
+    left: 50%;
+    font-size: 12px;
+    color: white;
+    opacity: 80%;
+    display: inline-block;
+    background: -webkit-linear-gradient(black, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(50px);
+    background-attachment: fixed;
+    
+}
+
+.fourth {
+    position: absolute;
+    top: 5050px;
+    width: 45%;
+    left: 50%;
+    font-size: 12px;
+    color: white;
+    opacity: 80%;
+    display: inline-block;
+    background: -webkit-linear-gradient(black, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(50px);
+    background-attachment: fixed;
+    
+}
+
+.first:hover {
+    color: white;
+    opacity: 80%;
+}
+
+@media screen and (min-width: 768px) {
+    .left {
+        font-size: 16px;
+        left: 12%;
+        top: 45%;
+}
+    .right {
+        font-size: 16px;
+        left: 12%;
+        top: 48%;
+    }
+
+    .first {
+        font-size: 14px;
+        top: 350px;
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .left {
+        font-size: 18px;
+        margin: 0;
+        height: 30000px;
+        width: 100%;
+        left: 12%;
+        top: 45%;
+}
+
+    .right {
+    font-size: 18px;
+    left: 12%;
+    top: 48%;
+}
+
+    .first {
+    font-size: 16px;
+    top: 450px;
+}
+
+    .second, .third, .fourth {
+    font-size: 16px;
+}
 }
