@@ -10,6 +10,7 @@ body {
     background-position: center center;
 }
 
+/* title */
 .left {
     position: fixed;
     left: 12%;
@@ -22,73 +23,100 @@ body {
 .right {
     position: fixed;
     left: 12%;
-    top: 17%;
-    font-size: 12px;
-    line-height: normal;
+    top: 18%;
+    font-size: 10px;
+    line-height: 14px;
     color: #000000;
-    width: 20%;
+    width: 30%;
 }
 
+/* block */
+
+.block {
+    position: relative;
+    left: 50%;
+    padding-bottom: 300px;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+/* first paragraph */
 .first {
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    left: 50%;
+    padding-top: 105px;
+    padding-bottom: 300px;
     color: white;
-    opacity: 50%;
+    opacity: 100%;
     font-size: 12px;
     width: 42%;
-    top: 350px;
-    left: 50%;
-}
-
-.second {
-    position: absolute;
-    top: 1050px;
-    width: 45%;
-    left: 50%;
-    font-size: 12px;
-    color: white;
-    opacity: 80%;
-    display: inline-block;
-    background: -webkit-linear-gradient(black, white);
-    background-clip: text;
+    max-width: 600px;
+    background: -webkit-linear-gradient(rgb(34, 34, 34), rgb(218, 218, 218));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    backdrop-filter: blur(50px);
     background-attachment: fixed;
 }
 
-.third {
-    position: absolute;
-    top: 2050px;
-    width: 45%;
+/* scrolling elements */
+.second {
+    position: sticky;
+    top: 10px;
     left: 50%;
+    padding-top: 95px;
+    padding-bottom: 500px;
+    width: 42%;
+    max-width: 600px;
     font-size: 12px;
     color: white;
-    opacity: 80%;
-    display: inline-block;
-    background: -webkit-linear-gradient(black, white);
+    opacity: 100%;
+    background: -webkit-linear-gradient( rgb(0, 0, 0), rgb(33, 33, 33), rgb(109, 109, 109), rgb(218, 218, 218));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    backdrop-filter: blur(50px);
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+.third {
+    position: sticky;
+    top: 10px;
+    left: 50%;
+    padding-top: 95px;
+    padding-bottom: 500px;
+    width: 42%;
+    max-width: 600px;
+    font-size: 12px;
+    color: white;
+    opacity: 100%;
+    background: -webkit-linear-gradient( rgb(0, 0, 0), rgb(33, 33, 33), rgb(109, 109, 109), rgb(218, 218, 218));
+    backdrop-filter: blur(5px);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-attachment: fixed;
     
 }
 
 .fourth {
-    position: absolute;
-    top: 3050px;
-    width: 45%;
+    position: sticky;
+    top: 10px;
     left: 50%;
+    padding-top: 95px;
+    padding-bottom: 500px;
+    width: 42%;
+    max-width: 600px;
     font-size: 12px;
     color: white;
-    opacity: 80%;
-    display: inline-block;
-    background: -webkit-linear-gradient(black, white);
+    opacity: 100%;
+    background: -webkit-linear-gradient( rgb(23, 23, 23), rgb(196, 196, 196));
+    backdrop-filter: blur(50px);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    backdrop-filter: blur(100px);
-    background-attachment: fixed;   
+    background-attachment: fixed; 
 }
 
 .fifth {
@@ -96,6 +124,7 @@ body {
     top: 3550px;
     width: 45%;
     left: 50%;
+    max-width: 600px;
     font-size: 12px;
     color: white;
     opacity: 100%;
@@ -113,6 +142,7 @@ body {
     width: 45%;
     left: 50%;
     font-size: 12px;
+    max-width: 600px;
     color: white;
     opacity: 100%;
     background: -webkit-linear-gradient(black, white);
@@ -129,6 +159,7 @@ body {
     width: 45%;
     left: 50%;
     font-size: 12px;
+    max-width: 600px;
     color: white;
     opacity: 100%;
     background: -webkit-linear-gradient(black, white);
@@ -145,6 +176,7 @@ body {
     width: 45%;
     left: 50%;
     font-size: 12px;
+    max-width: 600px;
     color: white;
     opacity: 100%;
     background: -webkit-linear-gradient(black, white);
@@ -161,6 +193,7 @@ body {
     width: 45%;
     left: 50%;
     font-size: 12px;
+    max-width: 600px;
     color: white;
     opacity: 100%;
     background: -webkit-linear-gradient(black, white);
@@ -177,6 +210,7 @@ body {
     width: 45%;
     left: 50%;
     font-size: 12px;
+    max-width: 600px;
     color: white;
     opacity: 100%;
     background: -webkit-linear-gradient(black, white);
@@ -193,6 +227,7 @@ body {
     width: 45%;
     left: 50%;
     font-size: 12px;
+    max-width: 600px;
     color: white;
     opacity: 100%;
     background: -webkit-linear-gradient(black, white);
