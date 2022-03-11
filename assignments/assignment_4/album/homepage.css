@@ -1,0 +1,160 @@
+
+
+body {
+    font-family: "Rebori", sans-serif;
+    src: url("fonts/Rebori-0WqRo.otf");
+    background-color: rgb(240, 240, 240);
+    margin: 20px;
+    background-image: url("assets/background.gif");
+    background-size: 90%;
+}
+
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+    -webkit-text-stroke: 0.75px black;
+}
+
+
+.LSD {
+    width: 30%;
+    padding: 5vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gif {
+    width: 100%;
+}
+
+.listen , .game, .watch, .album {
+    position: relative;
+    font-size: 24px;
+    color: white;
+    top: 120px;
+    z-index: 1;
+    text-align: center;
+    -webkit-text-stroke: 0.75px black;
+}
+
+.credits {
+    text-align: center;
+    padding-top: 5vh;
+    font-size: 8px;
+    color: #ff2fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1180px) {
+
+    body {
+        margin: 40px;
+        padding-top: 2vh;
+        background-size: 50%;
+    }
+
+    .LSD {
+        padding-bottom: 10vh;
+        width: 10%;
+    }
+
+    .LSD:hover {
+        width: 25%;
+        transition: all 800ms;
+    }
+
+    .iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gif {
+        width: 50%;
+        height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .listen , .game, .watch, .album {
+        position: relative;
+        font-size: 48px;
+        color: white;
+        top: 220px;
+        z-index: 1;
+        text-align: center;
+        -webkit-text-stroke: 1.5px black;
+    }
+
+    .listen a {
+        font-size: 48px;
+        transition: all 500ms;
+    }
+    
+    .listen a:hover {
+        font-size: 72px;
+        font-size-adjust: 50px;
+    }
+
+    .game a {
+        font-size: 48px;
+        transition: all 500ms;
+    }
+    
+    .game a:hover {
+        font-size: 72px;
+        font-size-adjust: 50px;
+    }
+
+    .watch a {
+        font-size: 48px;
+        transition: all 500ms;
+    }
+    
+    .watch a:hover {
+        font-size: 72px;
+        font-size-adjust: 50px;
+    }
+
+    .album a {
+        font-size: 48px;
+        transition: all 500ms;
+    }
+    
+    .album a:hover {
+        font-size: 72px;
+        font-size-adjust: 50px;
+    }
+
+    .credits {
+        text-align: center;
+        padding-top: 20vh;
+        font-size: 12px;
+    }
+
+
+}

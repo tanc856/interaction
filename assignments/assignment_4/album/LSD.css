@@ -1,0 +1,106 @@
+
+body {
+    font-family: "Rebori", sans-serif;
+    src: url("fonts/Rebori-0WqRo.otf");
+    background-color: rgb(240, 240, 240);
+    padding-top: 6vh;
+}
+
+
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+
+
+.LSD {
+    width: 100%;
+}
+
+.title {
+    padding: 15px;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.Lab {
+    color: #35a9f2;
+    -webkit-text-stroke: 0.3px black;
+}
+
+.Sia {
+    color: #f1f309;
+    -webkit-text-stroke: 0.3px black;
+}
+
+.Diplo {
+    color: #ef8fef;
+    -webkit-text-stroke: 0.3px black;
+}
+
+.homepage {
+    color: black;
+}
+
+.homepage a {
+    font-size: 14px;
+    transition: all 200ms;
+}
+
+.homepage a:hover {
+    font-size: 48px;
+    font-size-adjust: 50px;
+}
+
+.iframe {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1180px) {
+
+    body {
+        margin: 0;
+        padding-top: 2vh;
+    }
+
+    .LSD {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 58%;
+    }
+    
+    .title {
+        font-size: 36px;
+    }
+
+    .Lab, .Sia, .Diplo {
+        -webkit-text-stroke: 1.5px black;
+    }
+
+    .homepage a {
+        font-size: 36px;
+        transition: all 300ms;
+    }
+    
+    .homepage a:hover {
+        font-size: 72px;
+        font-size-adjust: 50px;
+    }
+}
