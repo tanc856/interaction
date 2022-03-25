@@ -1,0 +1,28 @@
+
+body {
+    margin: 5vw;
+    background-color: lightgrey;
+}
+
+#hour {
+    position: fixed;
+    width: 90px;
+    height: 37.5px;
+    background-color: red;
+}
+
+#minute {
+    position: fixed;
+    top: 150px;
+    width: 350px;
+    height: 112.5px;
+    background-color: red;
+}
+
+#second {
+    position: fixed;
+    top: 310px;
+    width: 1200px;
+    height: 400px;
+    background-color: red;
+}
