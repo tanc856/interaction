@@ -37,7 +37,34 @@
 /* align-self: center to avoid img stretch */
 
 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
 
+p {
+    margin: 0;
+}
 
+#app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 
+#app div.step {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
+#app div.step p {
+    color: #ffffff;
+  }
