@@ -2,13 +2,15 @@
 body {
     margin: 5vw;
     background-color: lightgrey;
+    font-family: 'Noto Sans Mono', monospace;
+
 }
 
 #hour {
     position: fixed;
     width: 90px;
     height: 37.5px;
-    background-color: red;
+    background-color: #445A67;
 }
 
 #minute {
@@ -16,7 +18,7 @@ body {
     top: 150px;
     width: 350px;
     height: 112.5px;
-    background-color: red;
+    background-color: #C29BA3;
 }
 
 #second {
@@ -24,5 +26,32 @@ body {
     top: 310px;
     width: 1200px;
     height: 400px;
-    background-color: red;
+    background-color: #CAB3C1;
+}
+
+#month {
+    position: fixed;
+    top: 12%;
+    left: 95%;
+    color: #445A67;
+    font-size: 20px;
+    transform: rotate(90deg);
+}
+
+#date {
+    position: fixed;
+    top: 45%;
+    left: 96.2%;
+    color: #445A67;
+    font-size: 20px;
+    transform: rotate(90deg);
+}
+
+#year {
+    position: fixed;
+    top: 80%;
+    left: 95.2%;
+    color: #445A67;
+    font-size: 20px;
+    transform: rotate(90deg);
 }
