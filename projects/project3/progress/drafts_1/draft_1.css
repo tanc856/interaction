@@ -1,0 +1,52 @@
+
+html,
+body {
+    margin: 0;
+    padding: 2%;
+    font-family: prestige-elite-std, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+}   
+
+#left {
+    position: fixed;
+    top: 30%;
+    left: 0%;
+    padding: 12px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+#right {
+    margin: 10px;
+    position: fixed;
+    top: 27%;
+    left: 90vw;
+    padding: 12px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 0.5px;
+}
+
+
+@media screen and (min-width: 768px) {
+    #right {
+        left: 93%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    #left {
+        top: 25%;
+        left: 0%;
+        padding: 15px;
+    }
+    
+    #right {
+        top: 22%;
+        left: 96%;
+        }
+    }
+    
