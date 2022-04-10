@@ -32,6 +32,7 @@ h1 {
 p {
     position: fixed;
     top: 90%;
+    left: 70%;
     padding: 0.5rem;
     font-size: 1.5vh;
     color: #767676;
@@ -42,6 +43,6 @@ h2 {
 }
 
 ul, section {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 22px;
 }
