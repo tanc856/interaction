@@ -25,7 +25,15 @@ jsonPromise.then((data) => {
     const records = data.records 
     for (let index = 0; index < records.length; index++) {
         const attachmentUrl = records[index].fields.Attachments[0].url
-        // Create Background Element
+        const numbers = [index]
+        // Create Numbers Element
+        const numberElement = document.createElement('p')
+        numberElement.classList.add('numbers')
+        numberElement.innerHTML = numbers;
+        console.log(numberElement)
+        // Add Number Element to the Container Element
+        numbersContainerElement.appendChild(numberElement)
+        /* Create Background Element
         const backgroundElement = document.createElement('img')
         backgroundElement.classList.add('background')
         backgroundElement.setAttribute('src', attachmentUrl)
@@ -35,6 +43,6 @@ jsonPromise.then((data) => {
         imageElement.setAttribute('src', attachmentUrl)
         // Add Image Element to the Container Element
         photographContainerElement.appendChild(imageElement)
-        backgroundContainerElement.appendChild(backgroundElement)
+        backgroundContainerElement.appendChild(backgroundElement) */
     }
 })
