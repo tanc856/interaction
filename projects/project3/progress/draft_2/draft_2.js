@@ -10,6 +10,7 @@ const authenticatedUrl = tableUrl + "?api_key=" + airtableApiKey;
 
 //  DOM REFERENCES
 const photographContainerElement = document.querySelector("#photograph");
+const backgroundContainerElement = document.querySelector("#background");
 
 
 const fetchPromise = fetch(authenticatedUrl)
@@ -21,11 +22,16 @@ jsonPromise.then((data) => {
     const records = data.records 
     for (let index = 0; index < records.length; index++) {
         const attachmentUrl = records[index].fields.Attachments[0].url
+        // Create Background Element
+        const backgroundElement = document.createElement('img')
+        backgroundElement.classList.add('background')
+        backgroundElement.setAttribute('src', attachmentUrl)
         // Create Image Element
         const imageElement = document.createElement('img')
         imageElement.classList.add('attachment')
         imageElement.setAttribute('src', attachmentUrl)
         // Add Image Element to the Container Element
         photographContainerElement.appendChild(imageElement)
+        backgroundContainerElement.appendChild(backgroundElement)
     }
 })
