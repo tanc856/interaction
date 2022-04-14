@@ -10,24 +10,11 @@ const authenticatedUrl = tableUrl + "?api_key=" + airtableApiKey;
 
 //  DOM REFERENCES
 const photographContainerElement = document.querySelector("#photograph-container");
-const backgroundContainerElement = document.querySelector("#background-container");
-const numbersContainerElement = document.querySelector("#timeline");
+const buttonsContainerElement = document.querySelector("#timeline");
 
-const buttons = document.querySelectorAll("buttons")
-const photographSelectAll = document.querySelectorAll("imageElement")
-
-
-
-// FUNCTIONS
-const handleEvents = (event) => {
-    /* ON EACH BUTTON, REMOVE ALL SELECTED CLASSES
-    for (let index = 0; index < records.length; index++) {
-        records[index].classList.remove('selected')
-    }  */
-    // TURN BACK ON BUTTON CORRESPONDING TO BUTTON PRESSED 
-    const buttonValue = event.target.innerHTML
-    photographSelectAll[buttonValue].classList.add('selected')
-}
+/*const backgroundContainerElement = document.querySelector("#background-container");*/
+/* const buttons = document.querySelectorAll("buttons")*/
+/*const photographSelectAll = document.querySelectorAll("imageElement")*/
 
 
 // APPLICATION
@@ -41,27 +28,40 @@ jsonPromise.then((data) => {
     for (let index = 0; index < records.length; index++) {
         const attachmentUrl = records[index].fields.Attachments[0].url
         const numbers = [index]
-        // Create Number Buttons
-        const numberElement = document.createElement('button')
-        numberElement.classList.add('numbers')
-        numberElement.innerHTML = numbers;
-        // Add Number Element to the Container Element
-        numbersContainerElement.appendChild(numberElement)
+        // Create Button Element
+        const buttonElement = document.createElement('button')
+        buttonElement.classList.add('numbers')
+        buttonElement.innerHTML = numbers; 
         /* Create Background Element
         const backgroundElement = document.createElement('img')
         backgroundElement.classList.add('background')
         backgroundElement.setAttribute('src', attachmentUrl)*/
         // Create Image Element
         const imageElement = document.createElement('img')
+        imageElement.classList.add('selected')
         imageElement.setAttribute('src', attachmentUrl)
         // Add Image Element to the Container Element
+        buttonsContainerElement.appendChild(buttonElement)
         photographContainerElement.appendChild(imageElement)
         /*backgroundContainerElement.appendChild(backgroundElement)*/
+    }
+
+// FUNCTIONS
+const handleEvents = (event) => {
+    const buttonValue = event.target.innerHTML
+    // ON EACH BUTTON, REMOVE ALL SELECTED CLASSES
+    for (let index = 0; index < photographContainerElement.length; index++) {
+    photographContainerElement[buttonValue].classList.remove('selected')
+}
+    /* TURN BACK ON BUTTON CORRESPONDING TO BUTTON PRESSED 
+    const buttonValue = event.target.innerHTML
+    photographContainerElement[buttonValue].classList.add('selected')
+}*/
 
 // ADD BUTTON
-    for (let index = 0; index < buttons.length; index++) {
-        buttons[index].addEventListener('click', handleEvents)
-        buttons[index].addEventListener('mouseover', handleEvents)
+    for (let index = 0; index < buttonsContainerElement.length; index++) {
+        buttonsContainerElement[index].addEventListener('click', handleEvents)
+        buttonsContainerElement[index].addEventListener('mouseover', handleEvents)
 }
 }
 })
