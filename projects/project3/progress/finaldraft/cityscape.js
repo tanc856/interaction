@@ -11,10 +11,7 @@ const authenticatedUrl = tableUrl + "?api_key=" + airtableApiKey;
 //  DOM REFERENCES
 const photographContainerElement = document.querySelector("#photograph-container");
 const buttonsContainerElement = document.querySelector("#timeline");
-
-/*const backgroundContainerElement = document.querySelector("#background-container");*/
-/* const buttons = document.querySelectorAll("buttons")*/
-/*const photographSelectAll = document.querySelectorAll("imageElement")*/
+const backgroundContainerElement = document.querySelector("#background-container");
 
 
 // APPLICATION
@@ -32,36 +29,41 @@ jsonPromise.then((data) => {
         const buttonElement = document.createElement('button')
         buttonElement.classList.add('numbers')
         buttonElement.innerHTML = numbers; 
-        /* Create Background Element
-        const backgroundElement = document.createElement('img')
-        backgroundElement.classList.add('background')
-        backgroundElement.setAttribute('src', attachmentUrl)*/
         // Create Image Element
         const imageElement = document.createElement('img')
         imageElement.classList.add('selected')
         imageElement.setAttribute('src', attachmentUrl)
+         // Create Background Image Element
+         const backgroundElement = document.createElement('img')
+         backgroundElement.classList.add('selected')
+         backgroundElement.setAttribute('src', attachmentUrl)
         // Add Image Element to the Container Element
         buttonsContainerElement.appendChild(buttonElement)
         photographContainerElement.appendChild(imageElement)
-        /*backgroundContainerElement.appendChild(backgroundElement)*/
+        backgroundContainerElement.appendChild(backgroundElement)
     }
+
+
+// DOM REFERENCES SELECT DYNAMIC CONTENT
+const buttons = document.querySelectorAll('button')
+const images = document.querySelectorAll('img')
+
 
 // FUNCTIONS
 const handleEvents = (event) => {
-    const buttonValue = event.target.innerHTML
     // ON EACH BUTTON, REMOVE ALL SELECTED CLASSES
-    for (let index = 0; index < photographContainerElement.length; index++) {
-    photographContainerElement[buttonValue].classList.remove('selected')
+    for (let index = 0; index < images.length; index++) {
+    images[index].classList.remove('selected')
 }
-    /* TURN BACK ON BUTTON CORRESPONDING TO BUTTON PRESSED 
+    // TURN BACK ON BUTTON CORRESPONDING TO BUTTON PRESSED 
     const buttonValue = event.target.innerHTML
-    photographContainerElement[buttonValue].classList.add('selected')
-}*/
+    images[buttonValue].classList.add('selected')
+} // Why is it not adding 'selected to the background elements??
+
 
 // ADD BUTTON
-    for (let index = 0; index < buttonsContainerElement.length; index++) {
-        buttonsContainerElement[index].addEventListener('click', handleEvents)
-        buttonsContainerElement[index].addEventListener('mouseover', handleEvents)
-}
+for (let index = 0; index < buttons.length; index++) {
+    buttons[index].addEventListener('click', handleEvents)
+    buttons[index].addEventListener('mouseover', handleEvents)
 }
 })
