@@ -29,22 +29,20 @@ fetch(authenticatedUrl)
   .then((data) => {
     const words = data.records;
     const meals = words.filter((word) => {
-        return word.fields.meal === 'meal'
+        return word.fields.meal
     })
-
-    console.log (data)
     const vegetables = words.filter((word) => {
-        return word.fields.vegetables === 'vegetable'
+        return word.fields.vegetables
     })
     const proteins = words.filter((word) => {
-        return word.fields.protein === 'protein'
+        return word.fields.protein
     })    
     const carbs = words.filter((word) => {
-        return word.fields.carb === 'carb'
+        return word.fields.carb
     })
 
     // Set Values onto HTML Elements 
-    vegetableElement.innerHTML = vegetables[Math.floor(Math.random()*vegetables.length)].fields.vegetable
+    vegetableElement.innerHTML = vegetables[Math.floor(Math.random()*vegetables.length)].fields.vegetables
     proteinElement.innerHTML = proteins[Math.floor(Math.random()*proteins.length)].fields.protein
     carbElement.innerHTML = carbs[Math.floor(Math.random()*carbs.length)].fields.carb
     mealElement.innerHTML = meals[Math.floor(Math.random()*meals.length)].fields.meal

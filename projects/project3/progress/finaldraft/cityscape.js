@@ -1,5 +1,4 @@
 
-
 const airtableApiKey = "keyOIp9wOnn8B5nk8";
 
 // URL of Where our Data is Located
@@ -10,8 +9,8 @@ const authenticatedUrl = tableUrl + "?api_key=" + airtableApiKey;
 
 //  DOM REFERENCES
 const photographContainerElement = document.querySelector("#photograph-container");
-const buttonsContainerElement = document.querySelector("#timeline");
 const backgroundContainerElement = document.querySelector("#background-container");
+const buttonsContainerElement = document.querySelector("#timeline");
 
 
 // APPLICATION
@@ -33,15 +32,15 @@ jsonPromise.then((data) => {
         const imageElement = document.createElement('img')
         imageElement.classList.add('selected')
         imageElement.setAttribute('src', attachmentUrl)
-         // Create Background Image Element
-         const backgroundElement = document.createElement('img')
-         backgroundElement.classList.add('selected')
-         backgroundElement.setAttribute('src', attachmentUrl)
+        // Create Background Image Element
+        const backgroundElement = document.createElement('img')
+        backgroundElement.classList.add('selected')
+        backgroundElement.setAttribute('src', attachmentUrl)
         // Add Image Element to the Container Element
         buttonsContainerElement.appendChild(buttonElement)
         photographContainerElement.appendChild(imageElement)
         backgroundContainerElement.appendChild(backgroundElement)
-    }
+}
 
 
 // DOM REFERENCES SELECT DYNAMIC CONTENT

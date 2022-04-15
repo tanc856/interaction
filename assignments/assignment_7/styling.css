@@ -34,8 +34,20 @@ body {
     font-size: 2vw;
 }
 
-span #vegetable {
+#vegetable {
     color: green;
+}
+
+#protein {
+    color: rgb(201, 89, 3);
+}
+
+#carb {
+    color: rgb(14, 120, 191);
+}
+
+#meal {
+    color: rgb(207, 187, 8);
 }
 
 #hint {
