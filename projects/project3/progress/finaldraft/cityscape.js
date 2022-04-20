@@ -31,82 +31,27 @@ jsonPromise.then((data) => {
         buttonElement.innerHTML = numbers; 
         // Create Image Element
         const imageElement = document.createElement('img')
-        imageElement.classList.add('selected')
-        imageElement.setAttribute('src', attachmentUrl)
+        if (index === 0) {
+            imageElement.classList.add('selected')
+            imageElement.setAttribute('src', attachmentUrl)
+        }
+        else {
+            imageElement.setAttribute('src', attachmentUrl)
+        }
         // Create Background Image Element
         const backgroundElement = document.createElement('img')
-        backgroundElement.classList.add('selected')
-        backgroundElement.setAttribute('src', attachmentUrl)
+        if (index === 0) {
+            backgroundElement.classList.add('selected')
+            backgroundElement.setAttribute('src', attachmentUrl)
+        }
+        else {
+            backgroundElement.setAttribute('src', attachmentUrl)
+        }
         // Add Image Element to the Container Element
         buttonsContainerElement.appendChild(buttonElement)
         photographContainerElement.appendChild(imageElement)
         backgroundContainerElement.appendChild(backgroundElement)
 }
-
-for (let index = 0; index < records.length; index++) {
-    const attachmentUrl = records[index].fields.Attachments[0].url
-    const numbers = [index]
-    // Create Button Element
-    const buttonElement = document.createElement('button')
-    buttonElement.classList.add('numbers')
-    buttonElement.innerHTML = numbers; 
-    // Create Image Element
-    const imageElement = document.createElement('img')
-    imageElement.classList.add('selected')
-    imageElement.setAttribute('src', attachmentUrl)
-    // Create Background Image Element
-    const backgroundElement = document.createElement('img')
-    backgroundElement.classList.add('selected')
-    backgroundElement.setAttribute('src', attachmentUrl)
-    // Add Image Element to the Container Element
-    buttonsContainerElement.appendChild(buttonElement)
-    photographContainerElement.appendChild(imageElement)
-    backgroundContainerElement.appendChild(backgroundElement)
-}
-
-for (let index = 0; index < records.length; index++) {
-    const attachmentUrl = records[index].fields.Attachments[0].url
-    const numbers = [index]
-    // Create Button Element
-    const buttonElement = document.createElement('button')
-    buttonElement.classList.add('numbers')
-    buttonElement.innerHTML = numbers; 
-    // Create Image Element
-    const imageElement = document.createElement('img')
-    imageElement.classList.add('selected')
-    imageElement.setAttribute('src', attachmentUrl)
-    // Create Background Image Element
-    const backgroundElement = document.createElement('img')
-    backgroundElement.classList.add('selected')
-    backgroundElement.setAttribute('src', attachmentUrl)
-    // Add Image Element to the Container Element
-    buttonsContainerElement.appendChild(buttonElement)
-    photographContainerElement.appendChild(imageElement)
-    backgroundContainerElement.appendChild(backgroundElement)
-}
-
-for (let index = 0; index < records.length; index++) {
-    const attachmentUrl = records[index].fields.Attachments[0].url
-    const numbers = [index]
-    // Create Button Element
-    const buttonElement = document.createElement('button')
-    buttonElement.classList.add('numbers')
-    buttonElement.innerHTML = numbers; 
-    // Create Image Element
-    const imageElement = document.createElement('img')
-    imageElement.classList.add('selected')
-    imageElement.setAttribute('src', attachmentUrl)
-    // Create Background Image Element
-    const backgroundElement = document.createElement('img')
-    backgroundElement.classList.add('selected')
-    backgroundElement.setAttribute('src', attachmentUrl)
-    // Add Image Element to the Container Element
-    buttonsContainerElement.appendChild(buttonElement)
-    photographContainerElement.appendChild(imageElement)
-    backgroundContainerElement.appendChild(backgroundElement)
-}
-
-
 
 // DOM REFERENCES SELECT DYNAMIC CONTENT
 const buttons = document.querySelectorAll('button')
@@ -133,11 +78,4 @@ for (let index = 0; index < buttons.length; index++) {
     buttons[index].addEventListener('click', handleEvents)
     buttons[index].addEventListener('mouseover', handleEvents)
 }
-
-// ADD ABOUT PAGE BUTTON
-//document.getElementById("about").addEventListener("mouseover", myFunction);
-
-//function myFunction() {
-  //document.getElementById("about").innerHTML = "Photograph by Raye Hwangbo &nbsp &nbsp &nbsp &nbsp &nbsp Design by Cynthia Tan";
-
 })
