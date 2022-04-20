@@ -135,9 +135,9 @@ for (let index = 0; index < buttons.length; index++) {
 }
 
 // ADD ABOUT PAGE BUTTON
-document.getElementById("about").addEventListener("mouseover", myFunction);
+//document.getElementById("about").addEventListener("mouseover", myFunction);
 
-function myFunction() {
-  document.getElementById("about").innerHTML = "Photograph by Raye Hwangbo &nbsp &nbsp &nbsp &nbsp &nbsp Design by Cynthia Tan";
-}
+//function myFunction() {
+  //document.getElementById("about").innerHTML = "Photograph by Raye Hwangbo &nbsp &nbsp &nbsp &nbsp &nbsp Design by Cynthia Tan";
+
 })
