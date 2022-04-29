@@ -20,6 +20,8 @@ a:hover {
     text-decoration: underline;
 } 
 
+
+
 #clock {
     font-size: 10px;
     position: fixed;
@@ -49,16 +51,16 @@ a:hover {
 #footnote {
     color: rgb(106, 97, 83);
     top: 92%;
-    font-size: 8px;
+    font-size: 10px;
 }
 
-.coffee, .tea, .sweets {
+.coffee, .sweets {
     font-size: 16px;
     position: fixed;
     left: 20%;
 }
 
-#coffeeprice, #teaprice, #sweetsprice, #dailyprice, #brewprice {
+#coffeeprice, #espressoprice, #sweetsprice, #brewprice, #decafprice {
     font-size: 16px;
     position: fixed;
     left: 75%;
@@ -68,30 +70,96 @@ a:hover {
     top: 38%;
 }
 
-.tea {
-    top: 58%;
+.espresso {
+    top: 47%;
+}
+
+.coldbrew {
+    top: 54%;
+}
+
+.decaf {
+    top: 61%;
 }
 
 .sweets {
-    top: 80%;
+    top: 75%;
+}
+
+.espresso, .coldbrew, .decaf {
+    position: fixed;
+    left: 25%;
 }
 
 #coffeeprice {
     top: 38%;
 }
 
-#dailyprice {
-    top: 43%;
-}
-
-#brewprice {
+#espressoprice {
     top: 47%;
 }
 
-#teaprice {
-    top: 58%;
+#brewprice {
+    top: 54%;
+}
+
+#decafprice {
+    top: 61%;
 }
 
 #sweetsprice {
-    top: 79%;
+    top: 75%;
+}
+
+#box1, #box2, #box3, #box4 {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1.5px solid rgb(0, 0, 0);
+    background-color: #ffffff;
+    font-size: 11px;
+    display: none;
+}
+
+.espresso:hover + #box1 {
+    display: block;
+}
+
+.coldbrew:hover + #box2 {
+    display: block;
+}
+
+.decaf:hover + #box3 {
+    display: block;
+}
+
+.sweets:hover + #box4 {
+    display: block;
+}
+
+#box1 {
+    max-width: 35ch;
+    top: 47%;
+    position: fixed;
+    left: 28%;
+}
+
+#box2 {
+    max-width: 50ch;
+    top: 54%;
+    position: fixed;
+    left: 28%;
+}
+
+#box3 {
+    max-width: 32ch;
+    top: 61%;
+    position: fixed;
+    left: 28%;
+}
+
+#box4 {
+    max-width: 45ch;
+    top: 75%;
+    position: fixed;
+    left: 28%;
 }
