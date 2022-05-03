@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/projects/project4/assets/coffee.png">
+
+    <script src="coldbrew.js" type="text/javascript" defer></script>
+
+    <title>steeped corner</title>
+</head>
+
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap');
+
+body {
+    background-color: rgb(138, 80, 10);
+    font-family: 'Space Mono', monospace;
+    letter-spacing: .1rem;
+    color: white;
+}
+
+#clock {
+    font-size: 10px;
+    position: fixed;
+    top: 2%;
+    left: 90%;
+}
+
+#title {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+#subtitle {
+    position: fixed;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    max-width: 70ch;
+    text-align: center;
+}
+
+</style>
+
+<body onload="startTime()">
+
+    <div id="clock"></div>
+
+
+    <div id="title">welcome to <i>the steeped corner!</i></div>
+    <div id="subtitle">if you have some time to spare and want something a little fancy, you have come to the right place! </div>
+
+
+
+</body>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/projects/project4/assets/coffee.png">
+
+    <script src="decaf.js" type="text/javascript" defer></script>
+
+    <title>decaf lounge</title>
+</head>
+
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap');
+
+body {
+    background-color: rgb(246, 198, 243);
+    font-family: 'Space Mono', monospace;
+    letter-spacing: .1rem;
+    color: white;
+}
+
+#clock {
+    font-size: 10px;
+    position: fixed;
+    top: 2%;
+    left: 90%;
+}
+
+#title {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+#subtitle {
+    position: fixed;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    max-width: 70ch;
+    text-align: center;
+}
+
+</style>
+
+<body onload="startTime()">
+
+    <div id="clock"></div>
+
+
+    <div id="title">welcome to <i>the bakery!</i></div>
+    <div id="subtitle">craving for some new tunes to satisfy your sweet tooth? here's our specials for today...</div>
+
+
+
+</body>
