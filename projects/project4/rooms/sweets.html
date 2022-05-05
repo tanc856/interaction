@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/projects/project4/assets/coffee.png">
 
-    <script src="decaf.js" type="text/javascript" defer></script>
+    <script src="sweets.js" type="text/javascript" defer></script>
 
-    <title>decaf lounge</title>
+    <title>bakery</title>
 </head>
 
 <style>
@@ -30,6 +30,10 @@ body {
     left: 90%;
 }
 
+#title, #subtitle, #submission {
+    transform: translate(-50%, -50%);
+}
+
 #title {
     position: fixed;
     top: 20%;
@@ -48,16 +52,60 @@ body {
     text-align: center;
 }
 
+#submission {
+    position: fixed;
+    top: 85%;
+    left: 50%;
+}
+
+#form_name, #form_url, button {
+    font-family: 'Space Mono', monospace;
+}
+
+.link {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    top: 50%;
+    left: 60%;
+    column-gap: 2px;
+}
+
+#linkhere{
+    line-height: 14px;
+    width: 50%;
+    height: 20vh;
+    align-content: flex-start;
+    justify-content: space-evenly;
+
+}
+
+.submitedLink {
+    font-size: 10px;
+    color: rgb(15, 92, 0);
+    text-decoration: underline;
+    transform: translate(-50%, -50%);
+}
+
 </style>
 
 <body onload="startTime()">
 
     <div id="clock"></div>
 
-
     <div id="title">welcome to <i>the bakery!</i></div>
     <div id="subtitle">craving for some new tunes to satisfy your sweet tooth? here's our specials for today...</div>
 
+    <div id="name"></div>
+    <div class="link" a id="linkhere"></div>
 
+    <div id="submission">
+        <form>
+            <input type="text" id="form_name" placeholder=" name">
+            <input type="text" id="form_url" placeholder=" url">
+            <button>submit</button>
+        </form>
+    </div>
 
 </body>
