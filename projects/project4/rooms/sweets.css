@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap');
+
+body {
+    background-color: rgb(246, 198, 243);
+    font-family: 'Space Mono', monospace;
+    letter-spacing: .1rem;
+    color: white;
+}
+
+#clock {
+    font-size: 10px;
+    position: fixed;
+    top: 2%;
+    left: 90%;
+}
+
+
+#greeting {
+    font-size: 10px;
+    position: fixed;
+    top: 1.85%;
+    left: 80%;
+}
+
+#title, #subtitle, #submission {
+    transform: translate(-50%, -50%);
+}
+
+#title {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+#subtitle {
+    position: fixed;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    max-width: 70ch;
+    text-align: center;
+}
+
+#submission {
+    position: fixed;
+    top: 85%;
+    left: 50%;
+}
+
+#form_name, #form_url, button {
+    font-family: 'Space Mono', monospace;
+}
+
+.link, #name {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    top: 50%;
+    left: 60%;
+    column-gap: 2px;
+}
+
+#linkhere{
+    line-height: 14px;
+    width: 50%;
+    height: 20vh;
+    align-content: flex-start;
+    justify-content: space-evenly;
+
+}
+
+.submitedLink {
+    font-size: 10px;
+    color: rgb(15, 92, 0);
+    text-decoration: underline;
+    transform: translate(-50%, -50%);
+}
+
+.guide {
+    font-size: 10px;
+    position: fixed;
+    top: 85%;
+    left: 75%;
+}
+
+#box1{
+    display: none;
+}
+
+.guide:hover + #box1 {
+    display: block;
+}

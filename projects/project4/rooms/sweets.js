@@ -1,4 +1,5 @@
 
+
 const airtableApiKey = "keyOIp9wOnn8B5nk8";
 
 // URL of Where our Data is Located
@@ -10,8 +11,9 @@ const authenticatedUrl = tableUrl + "?api_key=" + airtableApiKey;
 
 // DOM references
 const nameSubmissionElement = document.querySelector('#name')
-const urlSubmissionElement = document.querySelector('#linkhere')
+const urlSubmissionElement = document.querySelector('#link')
 const greetingElement = document.querySelector('#greeting')
+
 
 
 // APPLICATION
@@ -24,21 +26,43 @@ const jsonPromise = fetchPromise.then((response) => {
 // FOR LOOP 
 jsonPromise.then((data) => {
     const records = data.records 
-    console.log (records)
     for (let index = 0; index < records.length; index++) {
         const urlLink = records[index].fields.URL
-        // Create Url Response
-        const urlResponseElement = document.createElement('a')
+        const userName = records[index].fields.NAME
+        console.log (records)
+        // Create name reponse
+        const userNameResponseElement = document.createElement('p')
+        if (index >= 0) {
+            userNameResponseElement.classList.add('submitedName')
+            userNameResponseElement.setAttribute("text", userName);
+            userNameResponseElement.innerHTML = userName; 
+        }
+        // Create Url response
+        const urlResponseElement = document.createElement('src')
+        const spotifyEmbedUrl = urlLink.replace('/album/', '/embed/')
         if (index >= 0) {
             urlResponseElement.classList.add('submitedLink')
-            urlResponseElement.setAttribute("href", urlLink);
+            urlResponseElement.setAttribute("src", urlLink);
             urlResponseElement.innerHTML = urlLink; 
         }
-       
+        
+
         // Add each Element to the Container Element
-        urlSubmissionElement.appendChild(urlResponseElement)
+        userNameResponseElement.appendChild(nameSubmissionElement)
+        urlSubmissionElement.appendChild(spotifyEmbedIframeElement) 
     }
 })
+
+
+const spotifyEmbedIframeElement = document.createElement('iframe')
+spotifyEmbedIframeElement.setAttribute('src', spotifyEmbedUrl)
+spotifyEmbedIframeElement.setAttribute('width', '100%')
+spotifyEmbedIframeElement.setAttribute('height', '100%')
+spotifyEmbedIframeElement.setAttribute('frameBorder', '0')
+spotifyEmbedIframeElement.setAttribute('allowfullscreen', '')
+
+console.log(spotifyEmbedUrl);
+
 
 // GREETING
 

@@ -6,9 +6,6 @@
 
 
 
-
-
-
 // GREETING
 
 const myDate = new Date();
