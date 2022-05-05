@@ -96,6 +96,21 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.guide {
+    font-size: 10px;
+    position: fixed;
+    top: 85%;
+    left: 75%;
+}
+
+#box1{
+    display: none;
+}
+
+.guide:hover + #box1 {
+    display: block;
+}
+
 </style>
 
 <body onload="startTime()">
@@ -117,6 +132,9 @@ body {
         </form>
     </div>
 
-    <div id="guide">guide</div>
+    <div class="guide">note from the barista
+        <p id="box1">hi</p>
+    </div>
+
 
 </body>
