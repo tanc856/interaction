@@ -21,6 +21,13 @@ a:hover {
 } 
 
 
+#greeting {
+    font-size: 10px;
+    position: fixed;
+    top: 1.85%;
+    left: 80%;
+}
+
 #clock {
     font-size: 10px;
     position: fixed;
