@@ -30,6 +30,14 @@ body {
     left: 90%;
 }
 
+
+#greeting {
+    font-size: 10px;
+    position: fixed;
+    top: 1.85%;
+    left: 80%;
+}
+
 #title, #subtitle, #submission {
     transform: translate(-50%, -50%);
 }
@@ -92,6 +100,7 @@ body {
 
 <body onload="startTime()">
 
+    <div id="greeting"></div>
     <div id="clock"></div>
 
     <div id="title">welcome to <i>the bakery!</i></div>
@@ -107,5 +116,7 @@ body {
             <button>submit</button>
         </form>
     </div>
+
+    <div id="guide">guide</div>
 
 </body>

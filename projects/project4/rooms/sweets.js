@@ -11,6 +11,7 @@ const authenticatedUrl = tableUrl + "?api_key=" + airtableApiKey;
 // DOM references
 const nameSubmissionElement = document.querySelector('#name')
 const urlSubmissionElement = document.querySelector('#linkhere')
+const greetingElement = document.querySelector('#greeting')
 
 
 // APPLICATION
@@ -38,6 +39,22 @@ jsonPromise.then((data) => {
         urlSubmissionElement.appendChild(urlResponseElement)
     }
 })
+
+// GREETING
+
+const myDate = new Date();
+const hrs = myDate.getHours();
+
+let greeting;
+
+if (hrs < 12)
+  greeting = 'Good Morning ☀ ';
+else if (hrs >= 12 && hrs <= 17)
+  greeting = 'Good Afternoon! ';
+else if (hrs >= 17 && hrs <= 24)
+  greeting = 'Good Evening ☾ ';
+
+document.getElementById('greeting').innerHTML ='<b>' + greeting + '</b>';
 
 
 // CLOCK
