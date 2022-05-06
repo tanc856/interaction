@@ -55,15 +55,25 @@ body {
     font-family: 'Space Mono', monospace;
 }
 
-.link, #name {
+#link{
     position: fixed;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    top: 50%;
-    left: 60%;
-    column-gap: 2px;
 }
+
+#link, iframe {
+    padding: 7px;
+    top: 35%;
+    left: 50%;
+    justify-content: space-between;
+}
+
+#username {
+    position: fixed;
+    
+}
+
+
 
 #linkhere{
     line-height: 14px;
