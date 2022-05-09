@@ -1,5 +1,4 @@
 
-
 const airtableApiKey = "keyOIp9wOnn8B5nk8";
 
 // URL of Where our Data is Located
@@ -115,4 +114,30 @@ urlSubmissionForm.addEventListener('submit', (event) => {
     // Add each Element to the Container Element
     // userNameResponseElement.appendChild(nameResponseElement)
     urlSubmissionElement.appendChild(spotifyEmbedIframeElement) 
+
+    // Submit Chat Message to Airtable Database
+    const fetchPostPromise = fetch(authenticatedUrl, {
+        method: 'POST', 
+        body: JSON.stringify({
+            records: [{
+                fields: {
+                    URL:  urlLink,
+                }
+            }]
+        }),
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+    fetchPostPromise.then((response) => {
+        console.log(response)
+        return response.json()
+    })
+    .then((data) => {
+        console.log(data)
+    })
+    .catch((error) => {
+        console.log(error)
+    })
+    // End Submit Chat Message to Airtable Database
 })
