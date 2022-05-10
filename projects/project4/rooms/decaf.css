@@ -24,7 +24,7 @@ body {
     left: 80%;
 }
 
-#title, #subtitle, #submission {
+#title, #subtitle, .submission {
     transform: translate(-50%, -50%);
 }
 
@@ -46,17 +46,17 @@ body {
     text-align: left;
 }
 
-#submission {
+.submission {
     position: fixed;
     top: 51%;
-    left: 19%;
+    left: 27%;
 }
 
-#form_name, #form_url, button {
+#form_title, #form_url, button {
     font-family: 'Space Mono', monospace;
 }
 
-#link{
+#link {
     position: fixed;
     display: flex;
     flex-direction: column;

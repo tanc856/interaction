@@ -11,8 +11,10 @@ const authenticatedUrl = tableUrl + "?api_key=" + airtableApiKey;
 // DOM references
 const urlSubmissionElement = document.querySelector('#link')
 const greetingElement = document.querySelector('#greeting')
-const urlSubmissionForm = document.querySelector("#submission")
-const urlSubmissionInput = document.querySelector("#submission input")
+const urlSubmissionForm = document.querySelector(".submission")
+const urlSubmissionInput = document.querySelector(".submission #form_url")
+const titleSubmissionInput = document.querySelector(".submission #form_title")
+
 
 // APPLICATION
 const fetchPromise = fetch(authenticatedUrl)
@@ -20,22 +22,32 @@ const jsonPromise = fetchPromise.then((response) => {
     return response.json()
 })
 
+
 // FOR LOOP 
 jsonPromise.then((data) => {
     const records = data.records 
     for (let index = 0; index < records.length; index++) {
         const urlLink = records[index].fields.URL
+        const titleSubmission = records[index].fields.TITLE
+
+        // Create Title response
+        const titleResponseElement = document.createElement('a')
+        if (index >= 0) {
+            titleResponseElement.classList.add('submittedTitle')
+            titleResponseElement.setAttribute("href", urlLink);
+            titleResponseElement.innerHTML = titleSubmission; 
+        }
 
         // Create Url response
-        const urlResponseElement = document.createElement('p')
+        const urlResponseElement = document.createElement('a')
         if (index >= 0) {
-            urlResponseElement.classList.add('submitedLink')
-            urlResponseElement.setAttribute("src", urlLink);
-            urlResponseElement.innerHTML = urlLink; 
+            urlResponseElement.classList.add('submittedLink')
+            urlResponseElement.setAttribute("href", urlLink);
+            urlResponseElement.innerHTML = titleSubmission; 
         }
-        
+
         // Add each Element to the Container Element
-        urlSubmissionElement.appendChild(urlResponseElement) 
+        urlSubmissionElement.appendChild(urlResponseElement)
     }
 })
 
@@ -73,3 +85,57 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }
+
+// CONNECT AIRTABLE TO SUBMISSION BUTTON
+
+urlSubmissionForm.addEventListener('submit', (event) => {
+
+  event.preventDefault()
+  const urlLink = urlSubmissionInput.value
+  const titleSubmit = titleSubmissionInput.value
+  // console.log(userValue)
+  urlSubmissionInput.value = ""
+  titleSubmissionInput.value = ""
+
+  // // Create Title response
+   const titleResponseElement = document.createElement('p')
+
+      titleResponseElement.classList.add('submittedTitle')
+      titleResponseElement.setAttribute("src", titleSubmit);
+      titleResponseElement.innerHTML = titleSubmit; 
+  
+  // Create Url response
+  const urlResponseElement = document.createElement('src')
+  
+      urlResponseElement.classList.add('submitedLink')
+      urlResponseElement.setAttribute("src", urlLink);
+      urlResponseElement.innerHTML = urlLink; 
+  
+
+    // Submit Chat Message to Airtable Database
+    const fetchPostPromise = fetch(authenticatedUrl, {
+      method: 'POST', 
+      body: JSON.stringify({
+          records: [{
+              fields: {
+                  URL:  urlLink,
+                  TITLE: titleSubmit
+              }
+          }]
+      }),
+      headers: {
+          'Content-Type': 'application/json',
+      },
+  })
+  fetchPostPromise.then((response) => {
+      console.log(response)
+      return response.json()
+  })
+  .then((data) => {
+      console.log(data)
+  })
+  .catch((error) => {
+      console.log(error)
+  })
+  // End Submit Chat Message to Airtable Database
+})
