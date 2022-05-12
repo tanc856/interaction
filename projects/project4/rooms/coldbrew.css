@@ -1,59 +1,106 @@
-    
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');  
 
 body {
     background-color: rgb(138, 80, 10);
-    font-family: 'Space Mono', monospace;
+    font-family: calluna, serif;
+    font-style: normal;
+    font-weight: 300;
     letter-spacing: .1rem;
     color: white;
+}
+
+
+a:link {
+    color: rgb(0, 0, 0);
+}
+  
+a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+  
+a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+} 
+
+span {
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 75px;
+}
+
+#decoration {
+    padding-top: 5px;
+    font-size: 10px;
 }
 
 
 #clock {
     font-size: 10px;
     position: fixed;
-    top: 2%;
-    left: 90%;
+    top: 8%;
+    left: 80%;
 }
 
 
 #greeting {
     font-size: 10px;
     position: fixed;
-    top: 2%;
-    left: 78%;
+    top: 8%;
+    left: 70%;
 }
 
 #title, #subtitle, .submission {
     transform: translate(-50%, -50%);
 }
 
+
 #title {
     position: fixed;
     top: 20%;
-    left: 24%;
+    left: 26%;
     transform: translate(-50%, -50%);
     font-size: 18px;
 }
 
 #subtitle {
     position: fixed;
-    top: 28%;
-    left: 30%;
+    top: 32%;
+    left: 26%;
     transform: translate(-50%, -50%);
     font-size: 12px;
     max-width: 70ch;
     text-align: left;
 }
 
+#line1 {
+    position: fixed;
+    top: 25%;
+    left: 8%;
+    width: 37%;
+    height: 0.5px;
+    border-width: 0;
+    background-color: white;
+}
+
+#share {
+    font-size: 12px;
+    position: fixed;
+    top: 49%;
+    left: 8%;
+}
+
 .submission {
     position: fixed;
-    top: 51%;
-    left: 27%;
+    top: 55%;
+    left: 26%;
 }
 
 #form_title, #form_url, button {
-    font-family: 'Space Mono', monospace;
+    font-family: calluna, serif;
+    font-style: normal;
+    font-weight: 200;
 }
 
 #link{
@@ -64,9 +111,15 @@ body {
 
 #link {
     padding: 7px;
-    top: 45%;
-    left: 80%;
+    top: 20%;
+    left: 72%;
+    font-size: 12px;
+    line-height: 32px;
     justify-content: space-between;
+}
+
+#link a:hover {
+    color: rgb(124, 72, 0);
 }
 
 #username {
@@ -85,24 +138,17 @@ body {
 .submitedLink {
     font-size: 8px;
     max-width: 70ch;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: underline;
     transform: translate(-50%, -50%);
 }
 
-#share {
-    font-size: 12px;
-    position: fixed;
-    top: 43%;
-    left: 8%;
-}
-
-hr {
+#line2 {
     position: fixed;
     top: 75%;
     left: 8%;
     width: 20%;
-    height: 1px;
+    height: 0.5px;
     border-width: 0;
     background-color: white;
 }

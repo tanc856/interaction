@@ -1,17 +1,30 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');  
 
 body {
     background-color: rgb(230, 153, 225);
-    font-family: 'Space Mono', monospace;
+    font-family: calluna, serif;
+    font-style: normal;
+    font-weight: 300;
     letter-spacing: .1rem;
     color: white;
+}
+
+span {
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 75px;
+}
+
+#decoration {
+    padding-top: 5px;
+    font-size: 10px;
 }
 
 #clock {
     font-size: 10px;
     position: fixed;
-    top: 2%;
+    top: 8%;
     left: 90%;
 }
 
@@ -19,7 +32,7 @@ body {
 #greeting {
     font-size: 10px;
     position: fixed;
-    top: 2%;
+    top: 8%;
     left: 78%;
 }
 
@@ -30,19 +43,29 @@ body {
 #title {
     position: fixed;
     top: 20%;
-    left: 20%;
+    left: 24%;
     transform: translate(-50%, -50%);
     font-size: 18px;
 }
 
 #subtitle {
     position: fixed;
-    top: 28%;
-    left: 30%;
+    top: 32%;
+    left: 26%;
     transform: translate(-50%, -50%);
     font-size: 12px;
     max-width: 70ch;
     text-align: left;
+}
+
+#line1 {
+    position: fixed;
+    top: 25%;
+    left: 8%;
+    width: 37%;
+    height: 1px;
+    border-width: 0;
+    background-color: white;
 }
 
 #submission {
@@ -52,7 +75,7 @@ body {
 }
 
 #form_name, #form_url, button {
-    font-family: 'Space Mono', monospace;
+    font-family: calluna, serif;
 }
 
 #link{
@@ -63,7 +86,7 @@ body {
 
 #link, iframe {
     padding: 7px;
-    top: 10%;
+    top: 15%;
     left: 60%;
     justify-content: space-between;
 }

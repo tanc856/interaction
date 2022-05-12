@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="/projects/project4/assets/coffee.png">
 
     <link rel="stylesheet" type="text/css" href="espresso.css"/>
+    <link rel="stylesheet" type="text/css" href="espresso_sidebar.css"/>
     <script src="espresso.js" type="text/javascript" defer></script>
 
     <title>espresso room</title>
@@ -15,17 +16,23 @@
 
 <body onload="startTime()">
 
+    <div id="decoration">✯¸.•´*¨`*•✿ ✿•*`¨*`•.¸✯✯¸.•´*¨`*•✿ ✿•*`¨*`•.¸✯✯¸.•´*¨`*•✿ ✿•*`¨*`•.¸✯✯¸.•´*¨`*•✿ ✿•*`¨*`•.¸✯✯¸.•´*¨`*•✿✯¸.•´*¨`*•✿ ✿•*`¨*`•.¸✯✯¸.•´*¨`*•✿ ✿•*`¨*`•.¸✯✿•*`¨*`•.¸✯</div>
     <div id="greeting"></div>
     <div id="clock"></div>
 
 
-    <div id="title">welcome to <i>the espresso room!</i></div>
-    <div id="subtitle">maybe you only have a few minutes, so we won't take up too much of your time! </div>
+    <div id="title"><span>Welcome</span> to <i>the espresso room!</i></div>
+    <div id="subtitle">Maybe you only have a few minutes, <br>so we won't take up too much of your time!</div>
    
-    <div id="link"></div>
+    <hr id="line1">
 
-    <div id="share">what did you read about today?</div>
+    <div id="sidebar">
+        <p id="notice">See what others are reading: <hr></p>
+        <div id="link"></div>
+    </div> 
 
+
+    <div id="share">☞ What did you read about today?</div>
     <div class="submission">
         <form>
             <input type="text" id="form_title" placeholder=" title">
@@ -34,9 +41,9 @@
         </form>
     </div>
 
-    <hr>
-    <div class="guide">🥯 note from the barista
-        <p id="guidelines">this is a space for creatives to share and relax, <br>please respect others while in the cafe. thank you!</p>
+    <hr id="line2">
+    <div class="guide">✿ Note from the barista
+        <p id="guidelines">This is a space for creatives to share and relax, <br>please respect others while in the cafe. Thank you!</p>
     </div>
 
 

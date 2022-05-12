@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap');
+
 
 body {
     background-color: rgb(251, 242, 230);
-    font-family: 'Space Mono', monospace;
+    font-family: calluna, serif;
+    font-style: normal;
+    font-weight: 300;
     letter-spacing: .1rem;
 }
 
@@ -24,14 +26,14 @@ a:hover {
 #greeting {
     font-size: 10px;
     position: fixed;
-    top: 1.85%;
+    top: 5%;
     left: 80%;
 }
 
 #clock {
     font-size: 10px;
     position: fixed;
-    top: 2%;
+    top: 5%;
     left: 90%;
 }
 
