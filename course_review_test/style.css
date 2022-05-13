@@ -1,0 +1,17 @@
+
+body {
+    background-color: blanchedalmond;
+    color: rgb(51, 26, 1);
+    font-family: calluna, serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.question {
+    font-style: italic;
+    color: rgb(138, 69, 1);
+}
+
+.answer {
+    font-style: normal;
+}
